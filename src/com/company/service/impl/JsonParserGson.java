@@ -19,6 +19,6 @@ public class JsonParserGson implements JsonParser {
 
     @Override
     public Object parseFromJson(String jsonStr, Class c) {
-        return gson.fromJson(jsonStr,c);
+        return gson.fromJson(jsonStr,(Type)c);
     }
 }
